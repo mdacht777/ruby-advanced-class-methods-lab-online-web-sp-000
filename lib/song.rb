@@ -48,7 +48,7 @@ class Song
   end
 
 def self.alphabetical
-  @all.sort { |key| key.name }
+  self.@all.sort { |key| key.name }
 end
 
 end
