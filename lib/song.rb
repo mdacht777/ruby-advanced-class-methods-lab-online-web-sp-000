@@ -48,10 +48,6 @@ class Song
   end
 
 def self.alphabetical
-    @@all.each do |dog_name| 
-      puts dog_name.name
-    end
-
   @all.sort { |key| key.name }
 end
 
