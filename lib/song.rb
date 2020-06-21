@@ -52,7 +52,7 @@ def self.alphabetical
       puts dog_name.name
     end
 
-  @all.sort_by { |key| key.name }
+  @all.sort { |key| key.name }
 end
 
 end
