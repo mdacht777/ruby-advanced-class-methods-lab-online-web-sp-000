@@ -50,6 +50,7 @@ class Song
 def self.alphabetical
   temp=@all
   temp.sort { |key| key.name }
+  @all.collect {|i| i.name.to_s}.sort
 end
 
 end
