@@ -49,7 +49,7 @@ class Song
 
 def self.alphabetical
   puts @@all
-  @@all.collect {|i| i.name.to_s}.sort
+  @@all.sort_by {|i| i.name}
 end
 
 end
