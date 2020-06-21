@@ -48,7 +48,8 @@ class Song
   end
 
 def self.alphabetical
-  self.@all.sort { |key| key.name }
+  temp=@all
+  temp.sort { |key| key.name }
 end
 
 end
