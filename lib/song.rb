@@ -43,4 +43,7 @@ class Song
     end
   end
 
+  self.destroy_all
+    @@all=[]
+  end
 end
