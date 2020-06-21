@@ -48,8 +48,8 @@ class Song
   end
 
 def self.alphabetical
-  puts @all
-  @all.collect {|i| i.name.to_s}.sort
+  puts @@all
+  @@all.collect {|i| i.name.to_s}.sort
 end
 
 end
