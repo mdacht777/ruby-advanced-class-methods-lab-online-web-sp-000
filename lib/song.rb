@@ -48,7 +48,7 @@ class Song
   end
 
 def self.alphabetical
-  puts @@all.each {|key,val|key}
+  puts @@all.each {|key,val|key.name}
   @all.sort_by { |key, val| key }
 end
 
