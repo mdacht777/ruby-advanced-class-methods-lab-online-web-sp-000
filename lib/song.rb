@@ -47,8 +47,12 @@ class Song
     @@all=[]
   end
 
-def self.alphabetical
-  @@all.sort_by {|i| i.name}
-end
+  def self.alphabetical
+    @@all.sort_by {|i| i.name}
+  end
 
+  def self.new_from_filename(filename)
+    noext=filename.split(".mp3")[0]
+    puts noext
+  end
 end
