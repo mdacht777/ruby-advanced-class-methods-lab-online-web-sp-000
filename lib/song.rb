@@ -53,8 +53,10 @@ class Song
 
   def self.new_from_filename(filename)
     noext=filename.split(".mp3")[0]
-    artist_name=noext.split(" - ")[0]
-    name=noext.split(" - ")[1]
-    self.find_or_create_by_name(name)
+    song = self.new
+    song.artist_name=noext.split(" - ")[0]
+    song.name=noext.split(" - ")[1]
+    @@all << song
+    song
   end
 end
