@@ -49,7 +49,7 @@ class Song
 
 def self.alphabetical
   puts @@all.each {|key,val|val.name}
-  @all.sort_by { |key, val| key }
+  @all.sort_by { |key, val| val.name }
 end
 
 end
